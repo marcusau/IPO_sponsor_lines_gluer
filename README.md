@@ -17,3 +17,20 @@ don't use language dependent features so that you can try this classifier on any
 
 
 Add mode train data. Add text with mistakes into folder corpus and annotate it like file corpus/1005058.txt. Every file should contain the first symbol with mark, should we glue current line with the previous one or not ('*' - leave as is, '+' - should be glued). 
+
+### label of raw textual data
+![](pic/raw_text_labels.JPG)
+
+
+
+
+### key training parameters and file paths
+![](pic/training.JPG)
+
+
+### Model template
+![](pic/model.JPG)
+
+
+### Model components
+![](pic/model_components.JPG)
