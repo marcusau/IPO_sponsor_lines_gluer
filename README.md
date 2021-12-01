@@ -28,10 +28,22 @@ The design of model is not language dependent and it applies logistic classifier
 ![](pic/raw_text_labels.JPG)
 
 
-
+# Model training
+There are three scripts for training the pdf line gluer models,including
+- pdf_gluer.py : specify the hyper-parameters and define type of classifiers for line gluer model
+- pdf_lines_gluer.py : define the model template and skelekon 
+- pdf_preprocessor.py : stores the model structures and contains the function to  be called in deployment
 
 ### key training parameters and file paths
 ![](pic/training.JPG)
+
+1. define the dataset file path and the full paths of two other scripts (pdf_lines_gluer.py and pdf_preprocessor.py )
+2. set up the three key hyper-paraemters, including max_iter, seed and test size
+
+For Chinese dataset, please specify a higher max_iter in order to achieve better accuracy.
+
+Note: don't delete the "# inject code here #" in the pdf_lines_gluer.py. 
+
 
 
 ### Model template
