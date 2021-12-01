@@ -49,4 +49,7 @@ Note: don't delete the "# inject code here #" in the pdf_lines_gluer.py.
 ### Model template
 ![](pic/model.JPG)
 
+# Model deployment
 
+### Model deployment script
+![](pic/model_test.JPG)
