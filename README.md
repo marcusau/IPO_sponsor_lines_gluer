@@ -50,6 +50,21 @@ Note: don't delete the "# inject code here #" in the pdf_lines_gluer.py.
 ![](pic/model.JPG)
 
 # Model deployment
+In the script, model_test.py, there are four major steps to apply the preprocess_function:
+### input:
+- pdf file path
+- language (either "eng" and "chi")
+- tags (either "parties involved" and "underwriting")
+
+### steps in model_test.py
+1. read the pdf file by python open library: pymupdf (import fitz)
+2. locate the page numbers of tags (either "parties involved" and "underwriting") from table of content of the pdf file ( with the locate_pages function)
+3. clean raw texts extracted from indicated pages (with clean_pretext function)
+4. run the pdf line gluer model to align the text lines or paragraphs (with eng_preprocess_pdf or chi_preprocess_pdf function)
+
+### output:
+- processed texts or paragraphs after data cleaning and aligning 
+
 
 ### Model deployment script
 ![](pic/model_test.JPG)
